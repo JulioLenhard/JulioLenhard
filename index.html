@@ -1,0 +1,37 @@
+<!doctype HTML>
+<html class="no-js" lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Decodificador de Texto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./static/css/index.css">
+    </head>
+    <body>      
+        <!--Logo e cabeçalho-->
+        <header class="topo">
+            <img src="./static/image/kisspng-logo-blue-blue-triangle-irregular-graphics-5a8b9aebce7332.2835631215190986038456.jpg" alt="Logo" class="img" />
+            <h1 class="titulo-principal">Lenhard Developments</h1>  
+        </header>
+        <!-- Texto visual-->
+        <div class="container">
+            <p>Codar é <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+        <div class="container2">
+            <p>Vamos começar a Codificar?</p>
+        </div>
+        
+        <!-- Caixas de texto-->
+    	<div class="textBoxes">
+    		<div class="textBoxOne">
+    			<textarea rows="25" cols="200" id="textAreaEncripto" autocomplete="off"></textarea><br>
+    			<button class="btn" onclick="Encriptografia()">Encriptografar</button>
+    		</div>
+    		<div class="textBoxTwo">
+    			<textarea rows="25" cols="200" id="textAreaDecripto" autocomplete="off"></textarea><br>
+    			<button class="btn" onclick="Decriptografia()">Decriptografar</button>
+    		</div>
+    	</div>
+       <script type="text/javascript" src="./static/js/index.js"></script>
+    </body>
+</html>
