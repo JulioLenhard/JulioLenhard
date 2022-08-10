@@ -1,4 +1,5 @@
 ### Hi there 👋
+### Este repositório trata-se do meu primeiro desafio na Alura do Projeto Oracle Next Education
 
 <!--
 **JulioLenhard/JulioLenhard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
