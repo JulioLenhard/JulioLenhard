@@ -1,0 +1,139 @@
+/*Cabeçalho*/
+
+.topo {
+  background-color:black;
+}
+
+.img {
+  float: left;
+  width: 10%;
+  padding: 15px;
+}
+
+.titulo-principal,
+p {
+  font-family: A Std, monospace;
+  font-size: 100px;
+  text-align: center;
+  width: auto;
+  padding: 2px;
+}
+
+/*Texto flutuante*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(0, #120c56, #000000);
+  color: #eee;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #fd9c5b;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/*Caixas*/
+
+
+.textBoxes {
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.textBoxOne {
+
+  margin: 2%;
+
+}
+
+.textBoxTwo {
+
+  margin: 2%;
+}
+
+textarea {
+  resize: none;
+  width: 376px;
+  display:inline-block;
+}
+
+.container2{
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 60px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+}
