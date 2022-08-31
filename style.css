@@ -1,0 +1,289 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --cor1: #F3F5FC;
+    --cor2: #FFF;
+    --cor3: #0A3871;
+    --cor4: #082d5a;
+    --cor5: #e2e4eb;
+    --cor6: #495057;
+}
+
+body {
+    background-color: var(--cor1);
+
+}
+
+header { 
+    padding: 40px 80px 40px;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: calc(100vh - 131px);
+    padding: 0 40px 40px 240px;
+}
+
+section {
+    flex: 1;
+}
+
+section:nth-of-type(1) {
+    flex: 3;
+}
+
+textarea {
+    resize: none;
+}
+
+.coluna-esquerda {
+    padding: 40px 80px 40px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 16px 67px;
+}
+
+#input-text {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor1);
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: var(--cor3);
+}
+
+#grid-buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: auto;
+    column-gap: 10px;
+}
+
+#button-criptografar {
+    background-color: var(--cor3);
+    border-radius: 24px;
+    border: none;
+    color: var(--cor2);
+    font-size: 19px;
+    width: 100%;
+    height: 67px;
+    margin-top: 10px;
+}
+
+#button-criptografar:hover {
+    background-color: var(--cor4);
+}
+
+#button-descriptografar {
+    background-color: var(--cor1);
+    border-radius: 24px;
+    border-color: var(--cor3);
+    color: var(--cor3);
+    font-size: 19px;
+    width: 100%;
+    height: 67px;
+    margin-top: 10px;
+}
+
+#button-descriptografar:hover {
+    background-color: var(--cor5);
+}
+
+#img-aviso {
+    display: inline-block;
+}
+
+#texto-aviso {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.coluna-direita {
+    background-color: var(--cor2);
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 67px;
+}
+
+/* CSS para estilizar caixa quando não houver texto */
+
+.coluna-direita-sem-mensagem {
+    background-color: var(--cor2);
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#img-lupa {
+    width: 100%;
+}
+
+#sem-texto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sem-texto h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#sem-texto p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor6);
+    text-align: center;
+    margin: 10px 0;
+}
+
+#texto-criptografado {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    color: var(--cor6);
+    font-family: 'Inter', sans-serif;
+    
+}
+
+#button-copiar {
+    width: 100%;
+    height: 67px;
+    background-color: var(--cor2);
+    border-radius: 24px;
+    border-color: var(--cor3);
+    color: var(--cor3);
+    font-size: 19px;
+}
+
+#button-copiar:hover {
+    background-color: var(--cor5);
+}
+
+/* Configurações de responsividade */
+
+@media (max-width: 1200px) {
+    main {
+        display: flex;
+        flex-flow: column;
+        height: calc(100vh - 130px);
+        padding: 40px 80px 80px;
+    }
+
+    section {
+        flex: .4;
+    }
+
+    section:nth-of-type(1) {
+        flex: 2.6;
+    }
+
+    
+    #img-lupa {
+        display: none;
+    }
+
+
+    .coluna-esquerda {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        padding: 15px 24px;
+    }
+    
+    main {
+        display: flex;
+        flex-flow: column;
+        height: calc(100vh - 80px);
+        padding: 15px 24px 24px;
+    }
+
+    section {
+        flex: .5;
+    }
+
+    section:nth-of-type(1) {
+        flex: 2.5;
+    }
+
+    .coluna-esquerda {
+        padding: 40px 0;
+    }
+
+    .coluna-esquerda {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 16px 144px;
+    }
+
+    #grid-buttons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        column-gap: 10px;
+    }    
+
+    #button-criptografar {
+        background-color: var(--cor3);
+        border-radius: 18px;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+    #button-criptografar:hover {
+        background-color: var(--cor4);
+    }
+    
+    #button-descriptografar {
+        border-radius: 18px;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    #texto-aviso {
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    #button-copiar {
+        border-radius: 18px;
+        font-size: 16px;
+    }
+
+    #texto-criptografado {
+        font-size: 16px;
+
+    }
+
+    #img-lupa {
+        display: none;
+    }
+}

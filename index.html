@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Fontes utilzadas -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script async src="script.js"></script>
+    </head>
+    <body>
+        <!-- logo -->
+        <header>
+            <img src="imgs/logo_alura_32x48px.png" alt="Logotipo Alura">
+        </header>
+        <!-- conteúdo principal -->
+        <main>
+            <!-- coluna de entrada -->
+            <section class="coluna-esquerda">
+                <!-- area para entrar com o texto -->
+                <label >
+                    <textarea name="input-text" id="input-text" placeholder="Digite seu texto"></textarea>
+                </label>
+                <!-- apenas letras maiusculas -->
+                <div id="aviso-pequeno">
+                    <img src="imgs/aviso_16x16px.png" alt="Símbolo aviso" id="img-aviso">
+                    <p id="texto-aviso">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <!-- botões Criptografar Descriptografar -->
+                <div id="grid-buttons">
+                    <button id="button-criptografar">Criptografar</button>
+                    <button id="button-descriptografar">Descriptografar</button>
+                </div>
+            </section>
+            <!-- coluna de saida -->
+            <section class="coluna-direita">
+                <!-- caixa de saída -->
+                <label id="output">
+                    <textarea name="texto-criptografado" id="texto-criptografado" cols="30" rows="10" placeholder="Texto Criptografado" readonly></textarea>
+                </label>
+                <!-- botao para copiar texto -->
+                <button id="button-copiar">Copiar</button>
+
+                <!-- caso nao tenha um texto -->
+            <div id="sem-texto">
+                <div id="container">
+                    <img src="imgs/text-none-336_304px.png" alt="interação" id="img-lupa">
+                </div>
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            </section>
+        </main>
+        <!-- Challenge 01 - Alura Oracle One Next Education - Desenvolvido por Julio Lenhard -->
+    </body>
+</html>
